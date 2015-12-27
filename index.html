@@ -40,11 +40,9 @@
 					<div class="dropdown">
 						<ul id="nav" class="nav">
                             <li class="menu-item"><a class="smoothScroll" href="#headerwrap" title="Home"><b>Home</b></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><b>About</b></a></li>
                             <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><b>Resume</b></a></li>
                             <li class="menu-item"><a class="smoothScroll" href="#skillswrap" title="Skills"><b>Skills</b></a></li>
 							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><b>Projects</b></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><b>Contact</b></a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -305,7 +303,7 @@ Under the production engineers, I learnt about the procedures and protocol for g
 					</div>
                     <div class="col-lg-10">
                         <div class="col-lg-5 centered">
-                        <p><b>Interpersonal Skills</b></p>
+                        <p style="text-align:center"><b>Interpersonal Skills</b></p>
 						<canvas id="softskills"></canvas>
                         <p>
                          <ul>
@@ -314,27 +312,27 @@ Under the production engineers, I learnt about the procedures and protocol for g
                             <li>Confident public speaking (e.g. HackConEU)</li> 
                             <li>Strong team player</li>
                             <li>Secured multiple sponsorship contracts (eTech, Department of Computer Science, etc.)</li> 
-                            <li></li>    
+                            <li>Values professionalism</li>    
                         </ul>
                         </p>
 						<br>
                         
                         <script>
-                            var data1 = {
-                                labels: ["Leadership", "Teamwork", "Creativity", "Organisation", "Communication", "Technical", "Flexibility", "Negotiation"],
-                                datasets: [
-                                    {
-                                        label: "My First dataset",
-                                        fillColor: "rgba(220,220,220,0.2)",
-                                        strokeColor: "rgba(220,220,220,1)",
-                                        pointColor: "rgba(220,220,220,1)",
-                                        pointStrokeColor: "#fff",
-                                        pointHighlightFill: "#fff",
-                                        pointHighlightStroke: "rgba(220,220,220,1)",
-                                        data: [80,70,60,60,80,75,65,70]
-                                    },
-                                ]
-                            };
+                        var data1 = {
+                            labels: ["Leadership", "Teamwork", "Creativity", "Organisation", "Communication", "Technical", "Flexibility", "Negotiation"],
+                            datasets: [
+                                {
+                                    label: "My First dataset",
+                                    fillColor: "rgba(220,220,220,0.2)",
+                                    strokeColor: "rgba(220,220,220,1)",
+                                    pointColor: "rgba(220,220,220,1)",
+                                    pointStrokeColor: "#fff",
+                                    pointHighlightFill: "#fff",
+                                    pointHighlightStroke: "rgba(220,220,220,1)",
+                                    data: [80,70,60,60,80,75,65,70]
+                                },
+                            ]
+                        };
                             
                         var inView1 = false;
 
@@ -353,7 +351,7 @@ Under the production engineers, I learnt about the procedures and protocol for g
                             if (isScrolledIntoView('#softskills')) {
                                 if (inView1) { return; }
                                 inView1 = true;
-                                new Chart(document.getElementById("softskills").getContext("2d")).Radar(data1, radarOptions);                        
+                                new Chart(document.getElementById("softskills").getContext("2d")).Radar(data1, radarOptions); 
                             } else {
                                 inView1 = false;  
                             }
@@ -361,7 +359,7 @@ Under the production engineers, I learnt about the procedures and protocol for g
                     </script>
 					</div>
                         <div class="col-lg-5 centered">
-                        <p><b>Technical Skills</b></p>
+                        <p style="text-align:center"><b>Technical Skills</b></p>
                             <canvas id="hardskills"></canvas><br>
                         <p>
                          <ul>
@@ -374,21 +372,21 @@ Under the production engineers, I learnt about the procedures and protocol for g
                         </p>
 						<br>
                         <script>
-                                var data2 = {
-                                    labels: ["Digital Elec.", "Python", "Verilog", "Analogue Elec.", "Solidworks", "C", "Emb. Design", "Web"],
-                                    datasets: [
-                                        {
-                                            label: "My First dataset",
-                                            fillColor: "rgba(220,220,220,0.2)",
-                                            strokeColor: "rgba(220,220,220,1)",
-                                            pointColor: "rgba(220,220,220,1)",
-                                            pointStrokeColor: "#fff",
-                                            pointHighlightFill: "#fff",
-                                            pointHighlightStroke: "rgba(220,220,220,1)",
-                                            data: [80, 60, 60, 70, 80, 60, 60, 80]
-                                        },
-                                    ]
-                                };                    
+                        var data2 = {
+                            labels: ["Digital Elec.", "Python", "Verilog", "Analogue Elec.", "Solidworks", "C", "Emb. Design", "Web"],
+                            datasets: [
+                                {
+                                    label: "My First dataset",
+                                    fillColor: "rgba(220,220,220,0.2)",
+                                    strokeColor: "rgba(220,220,220,1)",
+                                    pointColor: "rgba(220,220,220,1)",
+                                    pointStrokeColor: "#fff",
+                                    pointHighlightFill: "#fff",
+                                    pointHighlightStroke: "rgba(220,220,220,1)",
+                                    data: [80, 60, 60, 70, 80, 60, 60, 80]
+                                },
+                            ]
+                        };                    
                         var inView2 = false;
 
                         function isScrolledIntoView(elem)
@@ -435,9 +433,9 @@ Under the production engineers, I learnt about the procedures and protocol for g
 				<div class="col-lg-6">
 					<p><img class="img-responsive" src="assets/img/warwicktech-bg.png" alt=""></p>
 				</div>
-				<div class="col-lg-3">
-					<p><b>WarwickTECH</b></p>
-				<p>WarwickTECH is a university society with a focus and aim to bringing together like minded entrepreneurs to solve technical and innovative problems. Designed for anyone who has had that bright idea; WarwickTECH aims to help students develop their technical and entrepreneurial skills. Across the year, we'll run events like our crash course workshops, Hackathons and guest speaker events.<br/>
+				<div class="col-lg-3 centered">
+                    <p><b>WarwickTECH</b></br>
+				WarwickTECH is a university society with a focus and aim to bringing together like minded entrepreneurs to solve technical and innovative problems. Designed for anyone who has had that bright idea; WarwickTECH aims to help students develop their technical and entrepreneurial skills. Across the year, we'll run events like our crash course workshops, Hackathons and guest speaker events.<br/>
                     <a href="https://warwick.tech"><sm><i class="icon-laptop"></i> Website</sm></a></br>
 					<sm><i class="icon-tag"></i> Student Society</sm>
 				</p>
@@ -446,9 +444,9 @@ Under the production engineers, I learnt about the procedures and protocol for g
 				<div class="col-lg-6 col-lg-offset-3">
 					<p><img class="img-responsive" src="assets/img/warwickhack.png" alt=""></p>
 				</div>
-				<div class="col-lg-3">
-						<p><b>WarwickHACK</b></p>
-					<p>Our largest event of the year will be WarwickHACK, our third internationally
+				<div class="col-lg-3 centered">
+                    <p><b>WarwickHACK</b></br>
+					Our largest event of the year will be WarwickHACK, our third internationally
 acclaimed hackathon in partnership with Major League Hacking, the official student
 hackathon league. With over 150 students from all across Europe (and beyond!) our next event aims to hit 200+ students from a huge scope of backgrounds.<br/>
 						<sm><i class="icon-tag"></i> Hackathon</sm> 
@@ -458,9 +456,9 @@ hackathon league. With over 150 students from all across Europe (and beyond!) ou
                 <div class="col-lg-6 col-lg-offset-3">
 					<p><img class="img-responsive" src="assets/img/ng.png" alt=""></p>
 				</div>
-				<div class="col-lg-3">
-						<p><b>National Grid Code Challenge (3D Scanning)</b></p>
-					<p>National Grid's Engineers have a problem; they need to calculate the volume of a complex 3D model. They want your help to design a software solution that lets their Engineers calculate this on the go using an iPad. Challenged for the best solution, teams will be competing for the prize of an iPad Air 2 and the just released Nexus 5X for each team member. Teams will have 4 weeks to work on the best solution and will present to a panel of judges.<br/>
+				<div class="col-lg-3 centered">
+                    <p><b>National Grid Code Challenge (3D Scanning)</b></br>
+					Over the summer of 2015, National Grid approached us with a problem. Their Engineers had a problem; they needed to calculate the volume of a complex 3D model. They wanted the help of WarwickTECH members to design a software solution using an iPad. Teams will be competed for the prize of an iPad Air 2 and the brand new Nexus 5X for each member. Teams had have 6 weeks to design a solution to present to the judges.<br/>
 						<sm><i class="icon-tag"></i> Code Challenge</sm>
 					</p>
 				</div>
@@ -468,9 +466,9 @@ hackathon league. With over 150 students from all across Europe (and beyond!) ou
 				<div class="col-lg-6 col-lg-offset-3">
 					<p><img class="img-responsive" src="assets/img/hackers.png" alt=""></p>
 				</div>
-				<div class="col-lg-3">
-						<p><b>What is a Hackathon and why should I go to one?</b></p>
-					<p>There’s a common misconception regarding the word “Hackathon”. Why would I want to get involved in an event centred around theft, malicious code and destroying systems? Fortunately, this is not the case nor what hackathons are about. As a matter of fact, hackathons are the complete opposite...</br><a href="https://medium.com/@WarwickTECH/what-is-a-hackathon-and-why-should-i-go-to-one-e43af875a421#.ivrjcm728">Read more...</a><br/>
+				<div class="col-lg-3 centered">
+                    <p><b>What is a Hackathon and why should I go to one?</b></br>
+					There’s a common misconception regarding the word “Hackathon”. Why would I want to get involved in an event centred around theft, malicious code and destroying systems? Fortunately, this is not the case nor what hackathons are about. As a matter of fact, hackathons are the complete opposite...</br><a href="https://medium.com/@WarwickTECH/what-is-a-hackathon-and-why-should-i-go-to-one-e43af875a421#.ivrjcm728">Read more...</a><br/>
 						<sm><i class="icon-tag"></i> Publication</sm>
 					</p>
             </div>
@@ -489,9 +487,9 @@ hackathon league. With over 150 students from all across Europe (and beyond!) ou
                 <div class="col-lg-6">
 					<p><img class="img-responsive" src="assets/img/port04.png" alt=""></p>
 				</div>
-				<div class="col-lg-3">
-					<p><b>Investigation into Ternary Logic</b></p>
-				<p>This project entails an investigation into the advantages/disadvantages of using ternary encoding for communications. The aim of the project is to determine if ternary encoding can provide benefits over binary implementations such as reducing the number of clock cycles needed to perform error correction as well as to do a comparision of CPU vs Dedicated Hardware error detection/correction.<br/>
+				<div class="col-lg-3 centered">
+                    <p><b>Investigation into Ternary Logic</b></br>
+				This project entails an investigation into the advantages/disadvantages of using ternary encoding for communications. The aim of the project is to determine if ternary encoding can provide benefits over binary implementations such as reducing the number of clock cycles needed to perform error correction as well as to do a comparision of CPU vs Dedicated Hardware error detection/correction.<br/>
                     <a href="https://github.com/Bucknalla/TernaryErrorCorrection"><sm><i class="icon-github"></i> Github</sm></a></br>
                     <sm><i class="icon-tag"></i> FPGA</sm>
 				</p>
@@ -500,9 +498,9 @@ hackathon league. With over 150 students from all across Europe (and beyond!) ou
                 <div class="col-lg-6 col-lg-offset-3">
 					<p><img class="img-responsive" src="assets/img/port05.png" alt=""></p>
 				</div>
-				<div class="col-lg-3">
-					<p><b>Design of 4-Bit Counter (VLSI)</b></p>
-				<p>The task of this assignment was to follow the process of designing a 4 bit counter with syncronous reset logic, in CMOS. A report follows the complete process, from the design of the inverters to the simulation of the complete counter. Each step outlines the schematic in S-Edit, test schematic in S-Edit, the layout in L-Edit, Waveform Charts in W-Edit (Both S-Edit and L-Edit). The design suite used was Tanner Tools EDA.
+				<div class="col-lg-3 centered">
+                    <p><b>Design of 4-Bit Counter (VLSI)</b></br>
+				The task of this assignment was to follow the process of designing a 4 bit counter with syncronous reset logic, in CMOS. A report follows the complete process, from the design of the inverters to the simulation of the complete counter. Each step outlines the schematic in S-Edit, test schematic in S-Edit, the layout in L-Edit, Waveform Charts in W-Edit (Both S-Edit and L-Edit). The design suite used was Tanner Tools EDA.
 <br/>
 					<sm><i class="icon-tag"></i> VLSI</sm> 
 				</p>
@@ -567,7 +565,7 @@ hackathon league. With over 150 students from all across Europe (and beyond!) ou
                         var radarOptions = {
 
                         //Boolean - If we show the scale above the chart data			
-                        scaleOverlay : true,
+                        scaleOverlay : false,
 
                         //Boolean - If we want to override with a hard coded scale
                         scaleOverride : true,
