@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 1 — What is a Software Defined Radio? – Alex Bucknall – PhD Researcher (Adaptive & Reconfigurable Radio Systems)</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="The term, Software Defined Radio (SDR) often gets conflated by the idea of Software Controlled Radios (SCR), which in essence are part of the control layer for an SDR but are by no means SDRs themselves. An SCR might be a radio system that is tunable or managed by software but the physical layer remains fixed in hardware. In contrast, SDRs are radios in which all or part of the physical layers (hardware) are manipulated/configured through the use of software.
+
+" />
+    <meta property="og:description" content="The term, Software Defined Radio (SDR) often gets conflated by the idea of Software Controlled Radios (SCR), which in essence are part of the control layer for an SDR but are by no means SDRs themselves. An SCR might be a radio system that is tunable or managed by software but the physical layer remains fixed in hardware. In contrast, SDRs are radios in which all or part of the physical layers (hardware) are manipulated/configured through the use of software.
+
+" />
+    
+    <meta name="author" content="Alex Bucknall" />
+
+    
+    <meta property="og:title" content="Week 1 — What is a Software Defined Radio?" />
+    <meta property="twitter:title" content="Week 1 — What is a Software Defined Radio?" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Alex Bucknall - PhD Researcher (Adaptive & Reconfigurable Radio Systems)" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars1.githubusercontent.com/u/3822918?s=460&v=4g" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Alex Bucknall</a></h1>
+            <p class="site-description">PhD Researcher (Adaptive & Reconfigurable Radio Systems)</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Week 1 — What is a Software Defined Radio?</h1>
+
+  <div class="entry">
+    <p>The term, <strong>Software Defined Radio</strong> (SDR) often gets conflated by the idea of Software Controlled Radios (SCR), which in essence are part of the control layer for an SDR but are by no means SDRs themselves. An SCR might be a radio system that is tunable or managed by software but the physical layer remains fixed in hardware. In contrast, SDRs are radios in which all or part of the physical layers (hardware) are manipulated/configured through the use of software.</p>
+
+<p>In this blog post, I’ll dive into the what is meant by a “physical layer” further on but for now this is the layer that controls the modulation/demodulation, filtering, encoding, etc. of the receieved and/or transmitted signals. For example, a car radio might be controlled by software managing the frequencies of the user’s desired radio stations; this would be defined as a Software Controlled Radio.</p>
+
+<h2 id="thats-interesting-but-why-would-i-need-an-sdr">That’s interesting but why would I need an SDR?</h2>
+
+<p>SDR is interesting to a number of different types of users from academic to military application and from commercial to consumer. It might surprise you to know that you likely interact with an SDR every day, your mobile/cellular phone.</p>
+
+<h3 id="academic-research">Academic Research</h3>
+
+<p>This blog post hardly covers what can be done with SDR as every day new tools are frameworks are being published, offering open source implementations of current standards such as 802.11, ZigBee, LoRa and Bluetooth. Tools such as GNU Radio Companion when combined with lower cost wideband SDR hardware make it easier, faster and increasingly affordable for academics to explore with their research. My personal research interests relate to upcoming cellular standards for IoT and designing adaptive baseband layers on top of partially reconfigurable hardware (using a Xilinx Zynq SoC).</p>
+
+<h3 id="hobbyist-interest">Hobbyist Interest</h3>
+
+<p>Here’s a run down on some of the interesting things you can do with SDR:</p>
+
+<ul>
+  <li>Listen to Broadcast Radio (FM &amp; AM)</li>
+  <li>Set up your own HAM Radio</li>
+  <li>Get involved with Radio Astronomy</li>
+  <li>Track Aircraft with the Mode S Protocol</li>
+  <li>Track Ships and other Vessels with AIS</li>
+  <li>Build your own GSM Network</li>
+  <li>Experiment with various other RF Protocols</li>
+  <li>Many more!</li>
+</ul>
+
+<p>Please note that this is a none exclusive list as this hardly scratches the surface as to what can be done with SDR!</p>
+
+<h2 id="ok-youve-convinced-me-where-can-i-start-learning-about-sdr">Ok, you’ve convinced me! Where can I start learning about SDR?</h2>
+
+<p>Historically, SDR has had a relatively high barrier to entry for beginners as the cost point of typical open SDRs hardware and toolkits has been in the region of £1000+. Fortunately, the open source community has assembled a fantastic set of tools that support a huge variety of radios, known as GNU Radio. GNU Radio applications can be written in C++ &amp; Python lanugages as well as assembled in flow diagram formats using a tool called the GNU Radio Companion. This toolkit is 100% and supports from the very low end of SDRs (~£20) all the way through to industry standard devices.</p>
+
+<p>To get started, I’d recommend taking a look at <img src="https://www.rtl-sdr.com/about-rtl-sdr/" alt="RTL-SDR" />, a $20 USB TV Tuner Dongle that can be used as a computer based radio scanner. This nifty device will let you play with a whole range of interesting SDR from simple amplitude &amp; frequency modulation/demodulation to <img src="https://blog.kroy.io/monitoring-home-power-consumption-for-less-than-25/" alt="reading smart meters" />.</p>
+
+<h2 id="useful-sdr-resources">Useful SDR Resources</h2>
+
+<ul>
+  <li><a href="https://greatscottgadgets.com/hackrf/">Hack RF</a></li>
+  <li><a href="https://greatscottgadgets.com/sdr/">Learn SDR with Hack RF</a></li>
+  <li><a href="https://coderwall.com/p/roldfw/getting-started-with-sdr-with-rtl2832u">Get Started with SDR - RTL-SDR</a></li>
+</ul>
+
+<h3 id="credit">Credit</h3>
+<p><em><a href="https://www.rs-online.com/designspark/10-things-you-can-do-with-software-defined-radio">RS - What is SDR?</a></em></p>
+
+<hr />
+
+<p><em>My name is Alex and I’m a Postgraduate Researcher at the University of Warwick’s Adaptive and Reconfigurable Systems Group, studying for my Doctorate Degree (PhD). If you’re interested in my research, contracting/consulting or simply want to chat, please reach out to me at my twitter handle <a href="https://twitter.com/AlexRBucknall">@AlexRBucknall</a>.</em></p>
+
+  </div>
+
+  <div class="date">
+    Written on December 12, 2017
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/bucknalla"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/AlexRBucknall"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
